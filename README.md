@@ -1,5 +1,5 @@
-# snek-webhook-starter-kit
+# adder-webhook-starter-kit
 
 ```bash
-snek --input-chainsync-include-cbor --output=webhook --output-webhook-url=http://localhost:8080
+adder --input-chainsync-include-cbor --output=webhook --output-webhook-url=http://localhost:8080
 ```

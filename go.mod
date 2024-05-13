@@ -1,4 +1,4 @@
-module github.com/blinklabs-io/snek-webhook-starter-kit
+module github.com/blinklabs-io/adder-webhook-starter-kit
 
 go 1.20
 
