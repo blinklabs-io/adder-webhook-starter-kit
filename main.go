@@ -30,6 +30,10 @@ func handleWebhook(c *gin.Context) {
 		)
 		return
 	}
+	if c.Request.Body == nil {
+		c.JSON(http.StatusBadRequest, "empty request")
+		return
+	}
 	rawBytes, err := io.ReadAll(c.Request.Body)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, "failed to read request body")
